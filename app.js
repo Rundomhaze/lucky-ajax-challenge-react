@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 
-const indexRouter = require('./routes/index');
+const indexRouter = require('./routes');
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;
@@ -13,7 +13,7 @@ app.locals.title = 'Simplest possible AJAX';
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
