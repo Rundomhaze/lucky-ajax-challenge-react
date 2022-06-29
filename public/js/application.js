@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
     const inputNum = event.target.sides.value;
     // console.log(inputNum);
-    const res = await fetch('/', {
+    const res = await fetch('/my', {
       method: 'POST',
       body: JSON.stringify({inputNum}),
       headers: {

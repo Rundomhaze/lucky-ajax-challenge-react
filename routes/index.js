@@ -31,7 +31,7 @@ router.post('/rolls', (req, res) => {
 });
 
 
-router.post('/', (req, res) => {
+router.post('/my', (req, res) => {
   const die = new Die(Number(req.body.inputNum));
   const home = React.createElement(myComp, {
     die,
