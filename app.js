@@ -20,5 +20,5 @@ app.use('/', indexRouter);
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
-  console.log('Server started at port', PORT);
+  console.log('Server started at port -------------', PORT);
 });
