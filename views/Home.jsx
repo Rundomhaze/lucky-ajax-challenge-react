@@ -1,5 +1,6 @@
 const React = require('react');
 const Layout = require('./Layout');
+const MyComp = require('./myComp')
 
 module.exports = function Home({ title, die, roll }) {
   return (
@@ -18,7 +19,7 @@ module.exports = function Home({ title, die, roll }) {
           <p><input type="submit" value="Roll the Die" /></p>
         </form>
 
-        <div id="die-container">
+        {/* <div id="die-container">
           {die
             && (
               <div className="die">
@@ -27,7 +28,8 @@ module.exports = function Home({ title, die, roll }) {
                 </span>
               </div>
             )}
-        </div>
+        </div> */}
+        <MyComp></MyComp>
 
       </div>
     </Layout>

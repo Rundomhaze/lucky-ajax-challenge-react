@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+// document.addEventListener('DOMContentLoaded', (event) => {
   document.addEventListener('submit', async (event) => {
     event.preventDefault();
     const inputNum = event.target.sides.value;
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#die-container').innerHTML = myCompHtml;
 
   });
-});
+// });
 
 
 // PSEUDO-код:

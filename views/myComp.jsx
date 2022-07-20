@@ -1,6 +1,6 @@
 const React = require('react');
-const Layout = require('./Layout');
-const Home = require('./Home');
+// const Layout = require('./Layout');
+// const Home = require('./Home');
 
 module.exports = function myComp({ die, roll }) {
   return (
